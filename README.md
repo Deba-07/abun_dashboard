@@ -1,50 +1,36 @@
-# React + TypeScript + Vite
+# 📰 Article Dashboard - Frontend Developer Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a responsive and interactive Article Dashboard built as part of a frontend developer assignment. It features tab-based filtering, live search functionality, and pagination — all designed with a focus on clean UI/UX, performance, and modern frontend best practices.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React.js**
+- **ShadCN/UI** (Tailwind CSS + Radix UI)
+- **TypeScript**
+- **Vite**
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- ✅ Clean and responsive dashboard layout
+- ✅ Tab-based filtering of articles
+- ✅ Real-time search functionality
+- ✅ Pagination for better content navigation
+- ✅ Reusable, modular component structure
+- ✅ Clean and accessible UI using ShadCN components
 
-- Configure the top-level `parserOptions` property like this:
+## 📂 Project Structure
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+```bash
+src/
+├── components/       # Reusable UI components
+├── pages/            # Main page views
+├── utils/            # Utility functions
+├── constants/        # Tab labels, mock data
+└── App.tsx           # Entry point
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+📌 Notes
+Built with responsiveness and component reusability in mind.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Uses mock data for articles. API integration-ready structure.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Designed using ShadCN’s sidebar-07 and dashboard-01 UI blocks for elegant layout.
